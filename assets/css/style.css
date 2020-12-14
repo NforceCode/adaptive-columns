@@ -1,14 +1,56 @@
-@import "./column-grid.css";
 @import "./bootstrap-grid.css";
 
-.container {
-  /* border: 1px solid aqua; */
+:root {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.site-header {
+  padding: 20px;
+  background-color:#292c47;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-item {
+  margin-right: 1rem;
+}
+
+
+.nav-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+  opacity: 0.75;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  display: inline-block;
+}
+
+.nav-link:hover {
+  opacity: 1;
+}
+
+.section {
+  padding-top: calc(2rem + var(--header-size));
 }
 
 .content {
-  /* font-size: 2em;
-  color: black;
-  border: 4px solid red; */
+  margin-bottom: 2rem;
 
   text-align: center;
 }
@@ -18,6 +60,15 @@
   background-position-x: center;
   height: 60px;
   margin-bottom: 1rem;
+}
+
+.content-header {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.content-text {
+  opacity: 0.8;
 }
 
 .icon-tools {
@@ -42,4 +93,25 @@
 
 .icon-cloud {
   background-image: url(../images/6.gif);
+}
+
+@media screen and (min-width: 681px) {
+  :root {
+    --header-size: 76px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  :root {
+    --header-size: 104px;
+  }
+  .site-header {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 439px) {
+  :root {
+    --header-size: 156px;
+  }
 }
