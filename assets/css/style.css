@@ -1,4 +1,4 @@
-@import "./bootstrap-grid.css";
+/* @import "./bootstrap-grid.css"; */
 
 :root {
   font-family: sans-serif;
@@ -15,6 +15,11 @@
   left: 0;
   right: 0;
   z-index: 1;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
 }
 
 
