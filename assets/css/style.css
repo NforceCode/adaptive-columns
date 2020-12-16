@@ -3,6 +3,8 @@
 :root {
   font-family: sans-serif;
   box-sizing: border-box;
+  font-size: 16px;
+  --text-lines: 5;
 }
 
 .site-header {
@@ -70,9 +72,18 @@
 .content-header {
   margin-bottom: 1rem;
   font-weight: bold;
+  overflow:hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .content-text {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--text-lines);
+  -webkit-box-orient: vertical;
+  line-height: 1rem;
+  max-height: calc(1rem * var(--text-lines));
+  overflow: hidden;
   opacity: 0.8;
 }
 
