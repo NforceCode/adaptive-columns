@@ -68,6 +68,11 @@
   margin-bottom: 1rem;
 }
 
+.img {
+  height: 100%;
+  object-fit: contain;
+}
+
 .content-header {
   margin-bottom: 1rem;
   font-weight: bold;
