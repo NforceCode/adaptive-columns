@@ -62,9 +62,8 @@
   text-align: center;
 }
 
-.icon {
-  background-repeat: no-repeat;
-  background-position-x: center;
+.img-wrapper {
+  min-height: 60px;
   height: 60px;
   margin-bottom: 1rem;
 }
@@ -87,29 +86,6 @@
   opacity: 0.8;
 }
 
-.icon-tools {
-  background-image: url(../images/1.gif);
-}
-
-.icon-monitor {
-  background-image: url(../images/2.gif);
-}
-
-.icon-bulb {
-  background-image: url(../images/3.gif);
-}
-
-.icon-react {
-  background-image: url(../images/4.gif);
-}
-
-.icon-case {
-  background-image: url(../images/5.gif);
-}
-
-.icon-cloud {
-  background-image: url(../images/6.gif);
-}
 
 @media screen and (min-width: 681px) {
   :root {
